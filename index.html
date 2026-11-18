@@ -3,46 +3,40 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Surya Kencana Plastik - Pasar Moderen Batununggal</title>
+<title>Surya Kencana Plastik</title>
 <style>
   *{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif;scroll-behavior:smooth}
   body{background:#fdf6fa;color:#333;line-height:1.5}
   nav{background:#6a1b9a;padding:14px 20px;position:sticky;top:0;z-index:999;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
   .brand{color:#fff;font-weight:bold;font-size:1.1rem;text-decoration:none}
-  .menu{display:flex;gap:14px;flex-wrap:wrap}
+  .menu{display:flex;gap:14px}
   .menu a{color:#f8bbd0;text-decoration:none;font-size:0.95rem;font-weight:bold}
-  .menu a:hover{color:#fff}
-  header{background:linear-gradient(135deg,#6a1b9a,#ec407a);color:#fff;text-align:center;padding:45px 20px}
+  header{background:linear-gradient(135deg,#6a1b9a,#ec407a);color:#fff;text-align:center;padding:40px 20px}
   header h1{font-size:2rem;margin-bottom:8px}
-  header p{font-size:1.05rem;max-width:600px;margin:0 auto 15px}
-  .badge{display:inline-block;background:#fff;color:#8e24aa;font-weight:bold;padding:6px 16px;border-radius:20px;font-size:0.9rem}
+  .badge{display:inline-block;background:#fff;color:#8e24aa;font-weight:bold;padding:6px 16px;border-radius:20px;margin-top:12px;font-size:0.9rem}
   .container{max-width:1000px;margin:25px auto;padding:0 18px}
   h2.judul{text-align:center;color:#6a1b9a;margin-bottom:8px;font-size:1.6rem}
   p.sub{text-align:center;color:#666;margin-bottom:20px;font-size:0.95rem}
-  .filter-area{text-align:center;margin-bottom:25px}
-  #cari{width:100%;max-width:420px;padding:11px 16px;border:2px solid #f48fb1;border-radius:25px;font-size:1rem;margin-bottom:14px;outline:none}
+  .filter{text-align:center;margin-bottom:25px}
+  #cari{width:100%;max-width:400px;padding:10px 16px;border:2px solid #f48fb1;border-radius:25px;font-size:1rem;margin-bottom:12px;outline:none}
   .tabs{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
-  .tab{background:#fff;border:1px solid #ce93d8;color:#6a1b9a;padding:8px 15px;border-radius:20px;cursor:pointer;font-weight:bold;font-size:0.9rem}
+  .tab{background:#fff;border:1px solid #ce93d8;color:#6a1b9a;padding:8px 14px;border-radius:20px;cursor:pointer;font-weight:bold}
   .tab.aktif,.tab:hover{background:#8e24aa;color:#fff}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
-  .card{background:#fff;border:1px solid #f8bbd0;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 3px 8px rgba(0,0,0,0.06)}
-  .foto{height:120px;background:linear-gradient(135deg,#f3e5f5,#fce4ec);display:flex;align-items:center;justify-content:center;font-size:3.5rem}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .card{background:#fff;border:1px solid #f8bbd0;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}
+  .foto{height:110px;background:linear-gradient(135deg,#f3e5f5,#fce4ec);display:flex;align-items:center;justify-content:center;font-size:3.2rem}
   .isi{padding:15px}
-  .kat{font-size:0.75rem;color:#ec407a;font-weight:bold;text-transform:uppercase}
-  .isi h3{color:#4a148c;font-size:1.1rem;margin:4px 0 6px}
+  .isi h3{color:#4a148c;font-size:1.1rem;margin-bottom:6px}
   .isi p{font-size:0.9rem;color:#555}
-  .btn-area{padding:0 15px 15px}
-  .btn-wa{display:block;background:#25D366;color:#fff;text-align:center;padding:10px;border-radius:8px;text-decoration:none;font-weight:bold;font-size:0.95rem}
-  .btn-wa:hover{background:#1ebe5d}
-  .box{background:#fff;border-radius:12px;padding:28px;margin-top:35px;border:1px solid #f8bbd0}
-  .unggul-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:18px}
-  .unggul-item{background:#fdf6fa;border:1px solid #f8bbd0;border-radius:10px;padding:18px;text-align:center}
+  .btn-wa{display:block;margin:0 15px 15px;background:#25D366;color:#fff;text-align:center;padding:10px;border-radius:8px;text-decoration:none;font-weight:bold}
+  .box{background:#fff;border-radius:12px;padding:25px;margin-top:35px;border:1px solid #f8bbd0}
+  .unggul-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:15px;margin-top:15px}
+  .unggul-item{background:#fdf6fa;border:1px solid #f8bbd0;border-radius:10px;padding:16px;text-align:center}
   .unggul-item h3{color:#8e24aa;font-size:1.05rem;margin-bottom:6px}
-  .unggul-item p{font-size:0.9rem;color:#555}
-  .info-bawah{margin-top:25px;padding-top:20px;border-top:2px dashed #f8bbd0;text-align:center}
-  .info-bawah h3{color:#6a1b9a;font-size:1.25rem;margin-bottom:10px}
-  .info-bawah p{margin-bottom:8px;color:#333;font-size:1rem}
-  footer{background:#4a148c;color:#fff;text-align:center;padding:20px;margin-top:40px;font-size:0.9rem}
+  .identitas{margin-top:25px;padding-top:20px;border-top:2px dashed #f48fb1;text-align:center}
+  .identitas h3{color:#6a1b9a;font-size:1.3rem;margin-bottom:10px}
+  .identitas p{font-size:1rem;color:#333;margin-bottom:6px}
+  footer{background:#4a148c;color:#fff;text-align:center;padding:18px;margin-top:35px;font-size:0.9rem}
 </style>
 </head>
 <body>
@@ -52,23 +46,23 @@
   <div class="menu">
     <a href="#atas">Beranda</a>
     <a href="#produk">Produk</a>
-    <a href="#keunggulan">Keunggulan & Info Toko</a>
+    <a href="#keunggulan">Keunggulan & Kontak</a>
   </div>
 </nav>
 
 <header id="atas">
   <h1>SURYA KENCANA PLASTIK</h1>
-  <p>Grosir & Eceran Aneka Kantong Plastik, Kemasan Makanan, Gelas Cup, Tisu, dan Perlengkapan Kebersihan.</p>
+  <p>Grosir & Eceran Kantong Plastik, Kemasan Makanan, Gelas Cup, Tisu, dan Alat Kebersihan.</p>
   <div class="badge">📍 Pasar Moderen Batununggal Kios B06-03</div>
 </header>
 
 <div class="container">
   <section id="produk">
     <h2 class="judul">Katalog Produk Toko</h2>
-    <p class="sub">Pilih kategori atau ketik nama barang untuk melihat keterangan produk, lalu klik WhatsApp untuk tanya stok.</p>
+    <p class="sub">Pilih kategori atau cari nama barang, lalu klik tombol WhatsApp untuk tanya stok.</p>
 
-    <div class="filter-area">
-      <input type="text" id="cari" onkeyup="cariBarang()" placeholder="🔍 Ketik nama barang (misal: kresek, cup, tisu)...">
+    <div class="filter">
+      <input type="text" id="cari" onkeyup="cariBarang()" placeholder="🔍 Ketik nama barang (kresek, cup, tisu)...">
       <div class="tabs">
         <button type="button" class="tab aktif" onclick="pilihKat('semua',this)">Semua</button>
         <button type="button" class="tab" onclick="pilihKat('plastik',this)">Plastik & Kresek</button>
@@ -79,52 +73,88 @@
 
     <div class="grid">
       <div class="card" data-kat="plastik">
-        <div><div class="foto">🛍️</div><div class="isi"><span class="kat">Plastik & Kresek</span><h3>Kantong Kresek HD</h3><p>Kantong kresek kuat dan tidak mudah sobek. Tersedia warna hitam, putih, dan merah mulai dari ukuran kecil (15), tanggung (24), besar (28/35), hingga jumbo untuk belanja maupun usaha.</p></div></div>
-        <div class="btn-area"><a class="btn-wa" href="https://wa.me" target="_blank">💬 Tanya Produk Ini</a></div>
+        <div><div class="foto">🛍️</div><div class="isi"><h3>Kantong Kresek HD</h3><p>Warna hitam, putih, dan merah. Ukuran kecil (15), tanggung (24), besar (28/35), hingga jumbo untuk belanja maupun usaha.</p></div></div>
+        <a class="btn-wa" href="https://wa.me" target="_blank">💬 Tanya Produk Ini</a>
       </div>
-
       <div class="card" data-kat="kemasan">
-        <div><div class="foto">🥤</div><div class="isi"><span class="kat">Cup & Kemasan</span><h3>Gelas Cup & Tutup</h3><p>Gelas plastik minuman berbagai ukuran (12oz, 14oz, 16oz, 18oz, dan 22oz). Cocok untuk usaha es teh, kopi, dan jus. Tersedia tutup datar, cembung, serta plastik roll sealer.</p></div></div>
-        <div class="btn-area"><a class="btn-wa" href="https://wa.me" target="_blank">💬 Tanya Produk Ini</a></div>
+        <div><div class="foto">🥤</div><div class="isi"><h3>Gelas Cup & Tutup</h3><p>Ukuran 12oz hingga 22oz untuk usaha es teh, kopi, dan jus. Tersedia tutup datar, cembung, serta plastik roll sealer.</p></div></div>
+        <a class="btn-wa" href="https://wa.me" target="_blank">💬 Tanya Produk Ini</a>
       </div>
-
       <div class="card" data-kat="kemasan">
-        <div><div class="foto">🍱</div><div class="isi"><span class="kat">Cup & Kemasan</span><h3>Kotak Mika & Thinwall</h3><p>Wadah kemasan makanan bening dan kotak makan anti bocor berbagai ukuran (500ml, 650ml, 750ml, hingga 1000ml). Praktis dan higienis untuk katering, kue, maupun nasi kotak.</p></div></div>
-        <div class="btn-area"><a class="btn-wa" href="https://wa.me" target="_blank">💬 Tanya Produk Ini</a></div>
+        <div><div class="foto">🍱</div><div class="isi"><h3>Kotak Mika & Thinwall</h3><p>Wadah makanan bening dan kotak makan anti bocor ukuran 500ml sampai 1000ml untuk katering dan kue.</p></div></div>
+        <a class="btn-wa" href="https://wa.me" target="_blank">💬 Tanya Produk Ini</a>
       </div>
-
       <div class="card" data-kat="plastik">
-        <div><div class="foto">🥡</div><div class="isi"><span class="kat">Plastik & Kresek</span><h3>Plastik Kiloan PP & PE</h3><p>Plastik bening (PP) dan buram lentur (PE) untuk membungkus gula, minyak, kerupuk, sayur, hingga es batu. Tersedia lengkap dalam berbagai ukuran berat dan ketebalan.</p></div></div>
-        <div class="btn-area"><a class="btn-wa" href="https://wa.me" target="_blank">💬 Tanya Produk Ini</a></div>
+        <div><div class="foto">🥡</div><div class="isi"><h3>Plastik Kiloan PP & PE</h3><p>Plastik bening dan buram lentur untuk bungkus gula, minyak, kerupuk, dan es batu. Lengkap semua ukuran.</p></div></div>
+        <a class="btn-wa" href="https://wa.me" target="_blank">💬 Tanya Produk Ini</a>
       </div>
-
       <div class="card" data-kat="kemasan">
-        <div><div class="foto">🧃</div><div class="isi"><span class="kat">Cup & Kemasan</span><h3>Sedotan Steril & Boba</h3><p>Aneka sedotan minuman mulai dari sedotan bungkus plastik satuan yang higienis (steril), sedotan tekuk warna-warni, hingga sedotan besar berujung runcing untuk minuman boba.</p></div></div>
-        <div class="btn-area"><a class="btn-wa" href="https://wa.me" target="_blank">💬 Tanya Produk Ini</a></div>
+        <div><div class="foto">🧃</div><div class="isi"><h3>Sedotan Steril & Boba</h3><p>Sedotan bungkus plastik higienis (steril), sedotan tekuk warna-warni, dan sedotan besar untuk minuman boba.</p></div></div>
+        <a class="btn-wa" href="https://wa.me" target="_blank">💬 Tanya Produk Ini</a>
       </div>
-
       <div class="card" data-kat="tisu">
-        <div><div class="foto">🧻</div><div class="isi"><span class="kat">Tisu & Kebersihan</span><h3>Aneka Tisu (Jolly, Plenty)</h3><p>Tersedia tisu wajah, tisu makan lipat, tisu gulung (roll), dan tisu kiloan lembut dari berbagai merek terpercaya untuk kebutuhan rumah makan, kafe, kantor, dan rumah tangga.</p></div></div>
-        <div class="btn-area"><a class="btn-wa" href="https://wa.me" target="_blank">💬 Tanya Produk Ini</a></div>
+        <div><div class="foto">🧻</div><div class="isi"><h3>Aneka Tisu (Jolly, Plenty)</h3><p>Tisu wajah, tisu makan lipat, tisu gulung, dan tisu kiloan untuk kebutuhan rumah makan, kafe, dan rumah tangga.</p></div></div>
+        <a class="btn-wa" href="https://wa.me" target="_blank">💬 Tanya Produk Ini</a>
       </div>
-
       <div class="card" data-kat="plastik">
-        <div><div class="foto">🗑️</div><div class="isi"><span class="kat">Plastik & Kresek</span><h3>Trash Bag / Plastik Sampah</h3><p>Kantong plastik sampah hitam tebal dan elastis dalam ukuran besar (60x100 cm, 80x100 cm, hingga 90x120 cm). Tidak mudah bocor untuk keperluan rumah maupun restoran.</p></div></div>
-        <div class="btn-area"><a class="btn-wa" href="https://wa.me" target="_blank">💬 Tanya Produk Ini</a></div>
+        <div><div class="foto">🗑️</div><div class="isi"><h3>Trash Bag / Plastik Sampah</h3><p>Plastik sampah hitam tebal ukuran besar (60x100 cm sampai 90x120 cm) untuk rumah maupun restoran.</p></div></div>
+        <a class="btn-wa" href="https://wa.me" target="_blank">💬 Tanya Produk Ini</a>
       </div>
-
       <div class="card" data-kat="tisu">
-        <div><div class="foto">🧹</div><div class="isi"><span class="kat">Tisu & Kebersihan</span><h3>Sapu & Alat Kebersihan</h3><p>Perlengkapan kebersihan harian seperti sapu ijuk, sapu lidi, pengki, kain pel lantai, serta sarung tangan plastik sekali pakai yang praktis untuk mengolah makanan.</p></div></div>
-        <div class="btn-area"><a class="btn-wa" href="https://wa.me" target="_blank">💬 Tanya Produk Ini</a></div>
+        <div><div class="foto">🧹</div><div class="isi"><h3>Sapu & Alat Kebersihan</h3><p>Sapu ijuk, sapu lidi, pengki, kain pel lantai, dan sarung tangan plastik sekali pakai.</p></div></div>
+        <a class="btn-wa" href="https://wa.me" target="_blank">💬 Tanya Produk Ini</a>
       </div>
     </div>
   </section>
 
   <section id="keunggulan" class="box">
     <h2 class="judul">Keunggulan Toko Kami</h2>
-    <p class="sub">Alasan pelanggan dan pelaku usaha memilih Surya Kencana Plastik</p>
     <div class="unggul-grid">
       <div class="unggul-item">
-        <h3>🤝 Melayani Grosir & Eceran</h3>
-        <p>Bisa beli satuan untuk kebutuhan rumah tangga maupun beli banyak (bal/dus) untuk stok warung dan usaha kuliner.</p>
+        <h3>🤝 Grosir & Eceran</h3>
+        <p>Bisa beli satuan untuk rumah tangga maupun beli banyak (bal/dus) untuk stok warung dan usaha.</p>
       </div>
+      <div class="unggul-item">
+        <h3>📦 Stok Lengkap</h3>
+        <p>Semua jenis plastik, kemasan makanan, cup minuman, hingga tisu tersedia lengkap berbagai ukuran.</p>
+      </div>
+      <div class="unggul-item">
+        <h3>💳 Pembayaran Mudah</h3>
+        <p>Menerima pembayaran tunai maupun non-tunai menggunakan QRIS (Bank BJB / Pasar NgaDigi).</p>
+      </div>
+    </div>
+
+    <div class="identitas">
+      <h3>Identitas & Kontak Toko</h3>
+      <p><strong>🏪 Nama Toko:</strong> Surya Kencana Plastik</p>
+      <p><strong>📍 Alamat:</strong> Pasar Moderen Batununggal Kios B06-03, Jl. Batununggal Indah Raya, Bandung</p>
+      <p><strong>📞 Nomor Telepon / WhatsApp:</strong> 0858-8118-0932 / 0813-1218-9118</p>
+    </div>
+  </section>
+</div>
+
+<footer>
+  &copy; 2026 Surya Kencana Plastik - Pasar Moderen Batununggal Kios B06-03
+</footer>
+
+<script>
+function cariBarang(){
+  var q=document.getElementById('cari').value.toLowerCase();
+  var list=document.querySelectorAll('.card');
+  for(var i=0;i<list.length;i++){
+    list[i].style.display=list[i].innerText.toLowerCase().includes(q)?'flex':'none';
+  }
+}
+function pilihKat(kat,el){
+  var tabs=document.querySelectorAll('.tab');
+  for(var i=0;i<tabs.length;i++)tabs[i].classList.remove('aktif');
+  el.classList.add('aktif');
+  var list=document.querySelectorAll('.card');
+  for(var j=0;j<list.length;j++){
+    var k=list[j].getAttribute('data-kat');
+    list[j].style.display=(kat==='semua'||k===kat)?'flex':'none';
+  }
+}
+</script>
+</body>
+</html>
