@@ -37,7 +37,10 @@
   .btn-wa:hover{background:#1ebe5d}
   .box{background:#fff;border-radius:12px;padding:25px;margin-top:35px;border:1px solid #f8bbd0}
   .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;align-items:center;margin-top:15px}
-  iframe{width:100%;height:260px;border:0;border-radius:10px}
+  .map-card{background:linear-gradient(135deg,#f3e5f5,#fce4ec);border:2px dashed #ce93d8;border-radius:12px;padding:25px;text-align:center}
+  .map-card .pin{font-size:3.2rem;margin-bottom:8px}
+  .map-card h3{color:#6a1b9a;margin-bottom:6px;font-size:1.15rem}
+  .map-card p{color:#555;font-size:0.9rem;margin-bottom:15px}
   footer{background:#4a148c;color:#fff;text-align:center;padding:20px;margin-top:40px;font-size:0.9rem}
 </style>
 </head>
@@ -117,26 +120,15 @@
   </section>
 
   <section id="lokasi" class="box">
-    <h2 class="judul">Lokasi Toko & Peta Maps</h2>
+    <h2 class="judul">Lokasi Toko & Petunjuk Arah</h2>
     <div class="info-grid">
       <div>
-        <p style="margin-bottom:8px"><strong>📍 Alamat:</strong><br>Pasar Moderen Batununggal Kios B06-03, Jl. Batununggal Indah Raya, Bandung.</p>
+        <p style="margin-bottom:8px"><strong>📍 Alamat Lengkap:</strong><br>Pasar Moderen Batununggal Kios B06-03, Jl. Batununggal Indah Raya, Bandung.</p>
         <p style="margin-bottom:8px"><strong>🕒 Jam Buka:</strong><br>Setiap Hari: 06.00 – 16.00 WIB</p>
-        <p style="margin-bottom:14px"><strong>📞 WhatsApp Toko:</strong><br>0858-8118-0932 / 0813-1218-9118</p>
-        <a class="btn-wa" href="https://google.com" target="_blank" style="background:#8e24aa">🗺️ Buka Google Maps</a>
+        <p style="margin-bottom:8px"><strong>💳 Pembayaran:</strong><br>Tunai & QRIS (Bank BJB / Pasar NgaDigi)</p>
+        <p><strong>📞 WhatsApp Toko:</strong><br>0858-8118-0932 / 0813-1218-9118</p>
       </div>
-      <div>
-       <iframe src="https://openstreetmap.org" loading="lazy"></iframe>
-      </div>
-    </div>
-  </section>
-</div>
-
-<footer>
-  &copy; 2026 Surya Kencana Plastik - Pasar Moderen Batununggal Kios B06-03
-</footer>
-
-<script>
-function cariBarang(){
-  var q = document.getElementById('cari').value.toLowerCase();
-  var list = document.querySelectorAll('.card');
+      <div class="map-card">
+        <div class="pin">🗺️📍</div>
+        <h3>Pasar Moderen Batununggal</h3>
+        <p>Blok Kios B06-03, Kec. Bandung Kidul, Kota Bandung</p>
